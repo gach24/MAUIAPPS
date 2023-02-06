@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBindingDemo.BindingModesPage"
+             Title="BindingModesPage">
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+        <Entry x:Name="source" 
+               Placeholder="Source" 
+               FontSize="50"
+               Text="Initial" />
+
+        <!-- Solo hace el binding en la primera ocasión 
+        <Entry x:Name="target" 
+               Placeholder="Target" 
+               FontSize="50"
+               Text="{Binding Text,Source={x:Reference source}, Mode=OneTime}" />
+        -->
+
+        <!-- Solo hace el binding en un sentido
+        <Entry x:Name="target" 
+               Placeholder="Target" 
+               FontSize="50"
+               Text="{Binding Text,Source={x:Reference source}, Mode=OneWay}" />
+         -->
+
+        <!-- Solo hace el binding en los dos sentidos sentido 
+        <Entry x:Name="target" 
+               Placeholder="Target" 
+               FontSize="50"
+               Text="{Binding Text,Source={x:Reference source}, Mode=TwoWay}" />
+        -->
+
+        <!-- Solo hace el binding en un sentido desde el destion a la fuente 
+        <Entry x:Name="target" 
+               Placeholder="Target" 
+               FontSize="50"
+               Text="{Binding Text,Source={x:Reference source}, Mode=OneWayToSource}" />
+        -->
+        
+        <!-- 
+            Default esta configurado para cada propiedad específica de cada control 
+            Ejemplo: El control Entry esta preconfigurado en TwoWay 
+        -->
+        <Entry x:Name="target" 
+               Placeholder="Target" 
+               FontSize="50"
+               Text="{Binding Text,Source={x:Reference source}, Mode=Default}" />
+    </VerticalStackLayout>
+</ContentPage>
