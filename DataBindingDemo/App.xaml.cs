@@ -9,7 +9,7 @@ namespace DataBindingDemo
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new BindingCodePage();
         }
     }
 }
