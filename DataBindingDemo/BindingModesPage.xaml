@@ -4,10 +4,10 @@
              x:Class="DataBindingDemo.BindingModesPage"
              Title="BindingModesPage">
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
-        <Entry x:Name="source" 
-               Placeholder="Source" 
-               FontSize="50"
-               Text="Initial" />
+            <Entry x:Name="source" 
+                   Placeholder="Source" 
+                   FontSize="50"
+                   Text="Initial" />
 
         <!-- Solo hace el binding en la primera ocasión 
         <Entry x:Name="target" 

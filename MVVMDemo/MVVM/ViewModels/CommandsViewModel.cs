@@ -29,7 +29,7 @@ namespace MVVMDemo.MVVM.ViewModels
             new Command(() => App.Current.MainPage.DisplayAlert("Title", "message", "ok"));
         
         public ICommand SearchCommand => new Command((s) =>
-        {
+        {   
             // var data = SearchTerm;
             var data = s;
         });

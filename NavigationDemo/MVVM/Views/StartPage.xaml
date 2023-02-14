@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationDemo.MVVM.Views.StartPage"
+             Title="StartPage">
+    <NavigationPage.TitleView>
+        <Frame 
+            Margin="10" 
+            Padding="0" 
+            CornerRadius="0">
+            <SearchBar Placeholder="Search Places" />
+        </Frame>
+    </NavigationPage.TitleView>
+    <VerticalStackLayout 
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+        <Entry Text="{Binding Name}" />
+        <Button 
+            Clicked="Button_Clicked"
+            Text="Go to page 2" />
+    </VerticalStackLayout>
+</ContentPage>
