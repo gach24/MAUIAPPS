@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CollectionViewDemo.MVVM.Views.ProductsView"
+             Title="ProductsView">
+
+    <!-- IsGrouped="True"
+    <CollectionView IsGrouped="True"
+                    ItemsSource="{Binding Products}"
+                    Scrolled="CollectionView_Scrolled">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame BackgroundColor="White" CornerRadius="15">
+                    <VerticalStackLayout>
+                        <Image Source="{Binding Image}" />
+                        <Label Text="{Binding Name}" />
+                        <Label Text="{Binding Price}" />
+                    </VerticalStackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+        <CollectionView.GroupHeaderTemplate>
+            <DataTemplate>
+                <Label BackgroundColor="LightGray"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       Text="{Binding Name}"
+                       TextColor="Black" />
+            </DataTemplate>
+        </CollectionView.GroupHeaderTemplate>
+        <CollectionView.GroupFooterTemplate>
+            <DataTemplate>
+                <Label Margin="0,0,0,15"
+                       Text="{Binding Count, StringFormat='Total Products {0}'}"
+                       TextColor="MidnightBlue" />
+            </DataTemplate>
+        </CollectionView.GroupFooterTemplate>
+    </CollectionView>
+    -->
+
+    <Grid RowDefinitions=".1*, 0.9*">
+        <Button Text="Manual Scrolling" Clicked="Button_Clicked" />
+        <CollectionView x:Name="collectionView"
+             Grid.Row="1"
+             IsGrouped="True"
+             ItemsSource="{Binding Products}"
+             Scrolled="CollectionView_Scrolled">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="White" CornerRadius="15">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Id}" />
+                            <Label Text="{Binding Name}" />
+                            <Label Text="{Binding Price}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+
+</ContentPage>

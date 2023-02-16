@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CollectionViewDemo.MVVM.Views.EmptyView"
+             Title="EmptyView">
+    <ContentPage.Resources>
+        <ContentView x:Key="NoResultsView">
+            <Grid>
+                <VerticalStackLayout VerticalOptions="Center">
+                    <Image HeightRequest="150"
+                           VerticalOptions="Center"
+                           Source="notfound.png" />
+                    <Label FontAttributes="Bold"
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           Text="No Results" />
+                </VerticalStackLayout>
+            </Grid>
+        </ContentView>
+        <ContentView x:Key="ConnectivityIssue">
+            <Grid>
+                <VerticalStackLayout VerticalOptions="Center">
+                    <Image HeightRequest="150"
+                           VerticalOptions="Center"
+                           Source="no_internet.png" />
+                    <Label FontAttributes="Bold"
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           Text="Check your internent connection" />
+                </VerticalStackLayout>
+            </Grid>
+        </ContentView>
+    </ContentPage.Resources>
+    
+    <!-- EmptyView="Not data found"
+    <CollectionView EmptyView="Not data found">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+                <x:String>Row Single</x:String>
+            </x:Array>
+        </CollectionView.ItemsSource>
+    </CollectionView>
+    -->
+
+    <!-- CollectionView.EmptyView
+    <CollectionView>
+        <CollectionView.EmptyView>
+            <VerticalStackLayout VerticalOptions="Center">
+                <Image HeightRequest="150"
+                       VerticalOptions="Center"
+                       Source="notfound.png" />
+                <Label FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       Text="No Results" />
+            </VerticalStackLayout>
+        </CollectionView.EmptyView>
+    </CollectionView>
+    -->
+    <Grid RowDefinitions=".2*,.8*">
+        <HorizontalStackLayout>
+            <Label Text="Toogle empty views" />
+            <Switch Toggled="Switch_Toggled" />
+        </HorizontalStackLayout>
+        <CollectionView Grid.Row="1" x:Name="collectionView">
+            <CollectionView.EmptyView>
+                <Grid>
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Image HeightRequest="150"
+                               VerticalOptions="Center"
+                               Source="notfound.png" />
+                        <Label FontAttributes="Bold"
+                               FontSize="Large"
+                               HorizontalTextAlignment="Center"
+                               Text="No Results" />
+                    </VerticalStackLayout>
+                </Grid>
+            </CollectionView.EmptyView>
+        </CollectionView>
+    </Grid>
+</ContentPage>
