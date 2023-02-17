@@ -28,7 +28,19 @@ public partial class ProductsView : ContentPage
     {
 		// collectionView.ScrollTo(10);
 		var viewModel = BindingContext as ProductsViewModel;
-		var product = viewModel.Products.SelectMany(p => p).FirstOrDefault(p => p.Id == 10);
-		collectionView.ScrollTo(product);
+
+		// var product = viewModel.Products.SelectMany(p => p).FirstOrDefault(p => p.Id == 10);
+		// collectionView.ScrollTo(product, animate: false, position: ScrollToPosition.Center);
+		viewModel.Products.Add(new Models.ProductsGroup("New Group",
+			new List<Models.Product>
+			{
+				new Models.Product
+				{
+					Id = 100,
+					Name = "Bitcoint",
+					Price = 9999
+				}
+			}));
+
     }
 }

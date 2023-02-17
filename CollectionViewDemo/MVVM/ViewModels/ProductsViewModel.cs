@@ -11,7 +11,7 @@ namespace CollectionViewDemo.MVVM.ViewModels
     public class ProductsViewModel
     {
         #region PROPERTIES
-        public List<ProductsGroup> Products { get; set; } = new List<ProductsGroup>();
+        public ObservableCollection<ProductsGroup> Products { get; set; } = new ObservableCollection<ProductsGroup>();
         #endregion
 
         #region CONSTRUCTORS
@@ -29,7 +29,7 @@ namespace CollectionViewDemo.MVVM.ViewModels
                 foreach (var product in group)
                     product.Id = i++;
 
-            Products = grouped.ToList();
+            Products = new ObservableCollection<ProductsGroup>(grouped.ToList());
 
 
         }

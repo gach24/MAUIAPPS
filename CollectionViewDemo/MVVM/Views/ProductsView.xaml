@@ -47,9 +47,14 @@
              Grid.Row="1"
              IsGrouped="True"
              ItemsSource="{Binding Products}"
-             Scrolled="CollectionView_Scrolled">
+             Scrolled="CollectionView_Scrolled"
+             ItemsUpdatingScrollMode="KeepLastItemInView">
             <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                <LinearItemsLayout 
+                    Orientation="Vertical" 
+                    ItemSpacing="10"
+                    SnapPointsType="Mandatory"
+                    SnapPointsAlignment="Start" />
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
