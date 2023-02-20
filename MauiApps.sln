@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StylesDemo", "StylesDemo\St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionViewDemo", "CollectionViewDemo\CollectionViewDemo.csproj", "{4441ECC2-5219-40BC-BB01-E9423316308F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasker", "Tasker\Tasker.csproj", "{98AAA692-FA33-48F6-89FF-E2AF5B465D55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasker", "Tasker\Tasker.csproj", "{98AAA692-FA33-48F6-89FF-E2AF5B465D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestDemo", "RestDemo\RestDemo.csproj", "{C391B9C8-FA93-4866-8FA4-9F8CB280489A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,12 @@ Global
 		{98AAA692-FA33-48F6-89FF-E2AF5B465D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98AAA692-FA33-48F6-89FF-E2AF5B465D55}.Release|Any CPU.Build.0 = Release|Any CPU
 		{98AAA692-FA33-48F6-89FF-E2AF5B465D55}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
