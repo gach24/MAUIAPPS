@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasker", "Tasker\Tasker.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestDemo", "RestDemo\RestDemo.csproj", "{C391B9C8-FA93-4866-8FA4-9F8CB280489A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiWeather", "MauiWeather\MauiWeather.csproj", "{EFA4FC65-E7FA-440A-B5C0-3394FD190CD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +187,12 @@ Global
 		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C391B9C8-FA93-4866-8FA4-9F8CB280489A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EFA4FC65-E7FA-440A-B5C0-3394FD190CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA4FC65-E7FA-440A-B5C0-3394FD190CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA4FC65-E7FA-440A-B5C0-3394FD190CD5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EFA4FC65-E7FA-440A-B5C0-3394FD190CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA4FC65-E7FA-440A-B5C0-3394FD190CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA4FC65-E7FA-440A-B5C0-3394FD190CD5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
