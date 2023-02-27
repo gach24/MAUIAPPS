@@ -8,10 +8,10 @@ namespace CollectionViewDemo
         {
             InitializeComponent();
 
-            // MainPage = new DataView();
+            MainPage = new DataView();
             // MainPage = new LayoutView();
             // MainPage = new EmptyView();
-            MainPage = new ProductsView();
+            // MainPage = new ProductsView();
         }
     }
 }
